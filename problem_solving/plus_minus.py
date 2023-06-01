@@ -18,9 +18,9 @@ def plusMinus(arr):
             neg+=1
         else:
             zero += 1
-    print(pos/len(arr))
-    print(neg/len(arr))
-    print(zero/len(arr))
+    print('%.6f' % (pos/len(arr)))
+    print('%.6f' % (neg/len(arr)))
+    print('%.6f' % (zero/len(arr)))
     return arr
 
 plusMinus([1,1,0,-1,-1])
