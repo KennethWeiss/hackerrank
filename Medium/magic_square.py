@@ -29,7 +29,7 @@ def formingMagicSquare(s):
     for i in diagonals:
         counts.append(i)
     print(f'All: {counts}')
-    print(f"most frequent is {mode(counts)}")
+    print(f"most frequent is {(counts)}")
     print(f'Rows: {rows} Columns: {columns} Left:{left_diag} Right:{right_diag}')
 
 formingMagicSquare([[5,3,4],[1,5,8],[6,4,2]])
