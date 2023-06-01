@@ -12,15 +12,19 @@ def plusMinus(arr):
     neg = 0
     zero = 0
     for i in arr:
-        if i<0:
+        if i>0:
             pos+=1
-        elif i>0:
+            print(f'pos: {pos}')
+        elif i<0:
             neg+=1
+            print(f'neg: {neg}')
         else:
             zero += 1
+            print(f'zero: {zero}')
     print('%.6f' % (pos/len(arr)))
     print('%.6f' % (neg/len(arr)))
     print('%.6f' % (zero/len(arr)))
     return arr
 
 plusMinus([1,1,0,-1,-1])
+plusMinus([-4 ,3, -9, 0, 4, 1])
