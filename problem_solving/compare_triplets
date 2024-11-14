@@ -20,9 +20,13 @@ def compareTriplets(a, b):
     bob = 0;
     scores=[alice,bob]
     for i in range(3):
-        if(a[i]!=a[b]):
+        if(a[i]!=b[i]):
             if(a[i]>b[i]):
-                
-                
+                alice+=1
+            else:
+                bob+=1
+    scores=[alice,bob]                
     return scores
     # Write your code here
+
+print(compareTriplets([1,0,0], [0,1,1]))
