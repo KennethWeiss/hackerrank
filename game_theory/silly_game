@@ -1,0 +1,34 @@
+#
+# Complete the 'sillyGame' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts INTEGER n as parameter.
+#
+#start with integer n that creates set of n integers 1 to n
+#set = {1,2,3,4,...,n-1,n}
+#current player removes a prime number and all of its multiples from the set
+#first player that can't make a move loses.
+
+#def sillyGame(n):
+    # Write your code here
+    #determine if number is prime
+
+
+def isPrime(num):
+    if num <= 1:
+        print("False")
+        return False
+    else:
+        for i in range(2,(num//2)+1):
+            if(num%i)==0:
+                return True
+    return 0
+
+
+isPrime(0) #false
+isPrime(1)  #false
+isPrime(2)  #2 Done
+isPrime(3)  #2,3 Done
+isPrime(4)  #2,3
+isPrime(5)
+isPrime(6)
